@@ -1,0 +1,14 @@
+.header-center{
+   max-width: 100%;
+   background-color: brown;
+   padding: 10px;
+   word-wrap: normal;
+   box-sizing: 45px;
+   translate: 50vh;
+}
+
+button div {
+    float: right;
+    
+    translate: 50vh;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="conectando el mundo y mas aprendiendo a crear este 2024 ">
+    <meta name="keywords" content="ollitas, guormet, miguelon, vasquez, celada, 2024, cajamarca, deici, juana">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ollitas gourmet</title>
+    <link rel="icon" href="google forms.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .menu-container {
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+
+        .menu-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 73vh;
+        }
+
+        .menu-item input {
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .price input {
+            border: none;
+            font-size: 16px;
+            text-align: right;
+            font-weight: 500;
+            width: 30%;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .date-input {
+            font-size: 16px;
+            font-weight: 500;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-message {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .capture-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .capture-container button {
+            width: 100%;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item input[type="text"], .price input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .calendar-time {
+                flex-direction: column;
+            }
+
+            .calendar-time input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="menu-container" id="menu-container">
+    <h2> Restaurante ollitas gourmet</h2>
+    
+    <!-- Campo para ingresar la fecha del menú -->
+    <input type="text" class="date-input" placeholder="Fecha del menú ( colocar aqui)">
+
+    <!-- Sección de Entradas -->
+    <div class="menu-section">
+        <h3>Entrada Sola</h3>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="3.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="3.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="3.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="">
+            <div class="price">
+                <input type="text" value="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Platos Principales -->
+    <div class="menu-section">
+        <h3>Segundo + Entrada</h3>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="10.00">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sección de Extras -->
+    <div class="menu-section">
+        <h3>Extras</h3>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="12.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="12.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="12.00">
+            </div>
+        </div>
+        <div class="menu-item">
+            <input type="text" value="escribir aqui">
+            <div class="price">
+                <input type="text" value="12.00">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Frase para los clientes -->
+    <div class="footer-message">
+        ¡Gracias por visitar nuestro restaurante! Esperamos que disfrutes de una experiencia culinaria inolvidable.
+    </div>
+
+    <!-- Botón para capturar el menú -->
+    <div class="capture-container">
+        <button id="captureBtn">Descargar Para Compartir</button>
+    </div>
+</div>
+
+<script>
+    // Función para capturar el menú como imagen usando html2canvas
+    document.getElementById('captureBtn').addEventListener('click', function() {
+        html2canvas(document.getElementById('menu-container')).then(function(canvas) {
+            const link = document.createElement('a');
+            link.download = 'menu.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    });
+</script>
+
+<!-- Agregar la librería html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>
+
